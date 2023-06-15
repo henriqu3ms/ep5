@@ -1,34 +1,90 @@
 body {
-    display: grid;
-    grid-template-areas: 
-    "cab cab cab"
-    "lad pri pri"
-    "rod rod rod";
-    grid-template-columns: 20% auto  auto;
-    grid-template-rows: auto 1000px auto;
-    gap: 15px;
-    }
-    
-    .cab {
-      background-color: blue;
-      grid-area: cab;
-      height: 200px;
-    }
-    
-    .pri {
-      background-color: rgb(255, 238, 48);
-      grid-area: pri;
-      height: auto;
-    }
-    
-    .lad {
-    background-color: chartreuse;
-    grid-area: lad;
+  display: grid;
+  grid-template-areas: 
+  "cab cab cab"
+  "pri pri pri"
+  "rod rod rod";
+  grid-template-columns: 20% auto  auto;
+  grid-template-rows: auto 1000px auto;
+  gap: 15px;
+  background-color: blueviolet;
+  }
+  
+  #bodyc {
+    background-color: blueviolet;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .cab {
+    background-color: rgb(224, 24, 24);
+    grid-area: cab;
+    height: 190px;
+    position: relative;
+    border-radius: 25px;
+    border: 5px solid black;
+  }
+  
+  .pri {
+    background-color: rgb(255, 238, 48);
+    grid-area: pri;
     height: auto;
-    }
-    
-    .rod {
-      background-color: coral;
-      grid-area: rod;
-      height: 200px;
-    }
+    border-radius: 25px;
+    border: 3px solid black;
+  }
+  
+  .rod {
+    background-color: blue;
+    grid-area: rod;
+    height: 200px;
+    border-radius: 25px;
+    border: 5px solid black;
+  }
+  
+  #logo {
+  width: 125px;
+  padding: 20px;
+  } 
+  
+  #logo2 {
+    width: 150px;
+  padding: 20px;
+  float: right;
+  }
+  
+  #logoc {
+    width: 50px;
+    margin-top: 20px;
+  }
+  
+  .icon {
+    width: 125px;
+  padding: 25px;
+  float: right;
+  }
+  
+  #meio {
+    width: 400px;
+    background-color: rgb(255, 238, 48);
+    height: 600px;
+    border: 7px solid black;
+    border-radius: 25px;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

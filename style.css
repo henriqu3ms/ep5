@@ -1,37 +1,34 @@
 body {
     display: grid;
- grid-template-areas: 
-  "cab cab cab"
-  "lad pri pri"
-  "rod rod rod";
-  grid-template-columns: 20% auto  auto;
-  grid-template-rows: auto 1000px auto;
-  
-}
-
-
-
-.grid-h {
-    background-color: blue;
-    grid-area: cab;
-}
-
-
-.grid-m {
+    grid-template-areas: 
+    "cab cab cab"
+    "lad pri pri"
+    "rod rod rod";
+    grid-template-columns: 20% auto  auto;
+    grid-template-rows: auto 1000px auto;
+    gap: 15px;
+    }
     
-    background-color: aqua;
-    grid-area: pri;
-}
-
-.grid-a {
-background-color: chartreuse;
-
-grid-area: lad;
-}
-
-.grid-f {
-
-    background-color: coral;
-
-    grid-area: rod;
-}
+    .cab {
+      background-color: blue;
+      grid-area: cab;
+      height: 200px;
+    }
+    
+    .pri {
+      background-color: rgb(255, 238, 48);
+      grid-area: pri;
+      height: auto;
+    }
+    
+    .lad {
+    background-color: chartreuse;
+    grid-area: lad;
+    height: auto;
+    }
+    
+    .rod {
+      background-color: coral;
+      grid-area: rod;
+      height: 200px;
+    }

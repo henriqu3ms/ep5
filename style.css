@@ -1,4 +1,4 @@
-body {
+body{
   display: grid;
   grid-template-areas: 
   "cab cab cab"
@@ -6,85 +6,231 @@ body {
   "rod rod rod";
   grid-template-columns: 20% auto  auto;
   grid-template-rows: auto 1000px auto;
-  gap: 15px;
-  background-color: blueviolet;
+  gap: 30px;
+  background-color: rgb(48, 183, 255);
   }
   
-  #bodyc {
-    background-color: blueviolet;
-    height: 800px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+  #bodycadastro{
+  background-color: rgb(48, 183, 255);
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
   }
   
-  .cab {
-    background-color: rgb(224, 24, 24);
-    grid-area: cab;
-    height: 190px;
-    position: relative;
-    border-radius: 25px;
-    border: 5px solid black;
+  #bodyproduto{
+  height: 900px;
+  background-color: rgb(48, 183, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
   }
   
-  .pri {
-    background-color: rgb(255, 238, 48);
-    grid-area: pri;
-    height: auto;
-    border-radius: 25px;
-    border: 3px solid black;
+  .cab{
+  background-color: rgb(224, 24, 24);
+  grid-area: cab;
+  height: 190px;
+  position: relative;
+  border-radius: 25px;
+  border: 5px solid black;
   }
   
-  .rod {
-    background-color: blue;
-    grid-area: rod;
-    height: 200px;
-    border-radius: 25px;
-    border: 5px solid black;
+  .pri{
+  background-color: rgb(186, 186, 186);
+  grid-area: pri;
+  height: auto;
+  border-radius: 25px;
+  border: 3px solid black;
   }
   
-  #logo {
+  .rod{
+  background-color: rgb(224, 24, 24);
+  grid-area: rod;
+  height: 200px;
+  border-radius: 25px;
+  border: 5px solid black;
+  }
+  
+  #logo{
   width: 125px;
   padding: 20px;
   } 
   
-  #logo2 {
-    width: 150px;
+  #logo2{
+  width: 150px;
   padding: 20px;
   float: right;
   }
   
-  #logoc {
-    width: 50px;
-    margin-top: 20px;
+  #logoc{
+  width: 50px;
+  margin-top: 20px;
   }
   
-  .icon {
-    width: 125px;
+  .icon{
+  width: 125px;
   padding: 25px;
   float: right;
   }
   
-  #meio {
-    width: 400px;
-    background-color: rgb(255, 238, 48);
-    height: 600px;
-    border: 7px solid black;
-    border-radius: 25px;
-    display: flex; 
-    flex-direction: column; 
-    align-items: center;
+  #carrinho{
+  width: 125px;
+  padding: 25px;
   }
   
+  #meio{
+  width: 400px;
+  background-color: rgb(224, 24, 24);
+  height: 600px;
+  border: 7px solid black;
+  border-radius: 25px;
+  display: flex; 
+  flex-direction: column; 
+  align-items: center;
+  }
   
+  label{
+  display: block;
+  border: 4px solid black;
+  font-weight: bold;
+  height: 30px;
+  border-radius: 15px;
+  font-family: "Comic Sans MS", cursive, sans-serif; 
+  padding: 5px;
+  background-color: rgb(186, 186, 186);
+  }
   
+  form{
+  width: 300px; 
+  padding-top: 20px;
+  }
   
+  input[type="text"], input[type="email"], input[type="number"] {
+  width: 150px;
+  border: 1px solid black;
+  border-radius: 15px;
+  margin: 15px;
+  height: 20px;
+  }
   
+  input[type="submit"]{
+  background-color: chartreuse;
+  color: black;
+  height: 60px;
+  border: 4px solid black;
+  width: 300px;
+  border-radius: 15px;
+  font-family: "Comic Sans MS", cursive, sans-serif; 
+  }
   
+  .titulocadastro{
+  font-family: "Comic Sans MS", cursive, sans-serif; 
+  color: black;;
+  }
   
+  .container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-family: "Comic Sans MS", cursive, sans-serif; 
+  }
   
+  .card{
+  width: 300px;
+  background-color: rgb(224, 24, 24);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: 5px solid black;
+  }
   
+  .card img{ 
+  width: 200px;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  border: 5px solid black;
+  padding: 20px;
+  background-color: rgb(48, 183, 255);
+  }
   
+  .card h3{
+  font-size: 18px;
+  margin-bottom: 10px;
+  }
   
+  .card p{
+  color: black;
+  background-color: chartreuse;
+  border: 3px solid black;
+  padding: 2px;
+  }
   
+  .container2{
+  display: flex;
+  flex-wrap: wrap;
+    justify-content: center;
+    font-family: "Comic Sans MS", cursive, sans-serif; 
+  }
+  
+  .card2{
+  width: 300px;
+  background-color: rgb(224, 24, 24);
+  border-radius: 8px;
+  margin: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: 5px solid black;
+  margin-top: 20px;
+  }
+  
+  .h32{
+  font-size: 18px;
+  margin-bottom: 10px;
+  }
+  
+  .p2{
+  color:black;
+  background-color:chartreuse;
+  border: 3px solid black;
+  padding: 2px;
+  }
+  
+  .charmanderimg{
+  width: 200px;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  border: 5px solid black;
+  padding: 20px;
+  background-color: rgb(48, 183, 255);
+  }
+  
+  .container2{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-family: "Comic Sans MS", cursive, sans-serif; 
+  }
+  
+  .principalproduto{
+  background-color: rgb(186, 186, 186);
+  width: 450px;
+  height:auto;
+  border-radius: 15px;
+  border: 5px solid black;
+  margin-top: 30px;
+  }
+  
+  .pp{
+  padding-top: 2px;
+  margin: 30px;
+  }

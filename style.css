@@ -172,6 +172,8 @@ body{
   padding: 2px;
   }
   
+  /*produto*/
+
   .container2{
   display: flex;
   flex-wrap: wrap;
@@ -233,4 +235,31 @@ body{
   .pp{
   padding-top: 2px;
   margin: 30px;
+  }
+
+  /*carrinho*/
+
+  #maincarrinho {
+    background-color: rgb(186, 186, 186);
+    width: 900px;
+    height: 700px;
+    border-radius: 15px;
+    border: 5px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+  }
+
+  #bodycarrinho {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 1000px;
+  }
+
+  .ulcorrido {
+    display: flex;
+    margin: 2px;
   }

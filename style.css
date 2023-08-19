@@ -1,73 +1,81 @@
 /*principal*/
 
-body{
+@media screen and (max-width: 700px) {
+  .pri {
+    background-color: chocolate;
+  }
+}
+
+
+
+body {
   display: grid;
-  grid-template-areas: 
-  "cab cab cab"
-  "pri pri pri"
-  "rod rod rod";
-  grid-template-columns: 20% auto  auto;
+  grid-template-areas:
+    "cab cab cab"
+    "pri pri pri"
+    "rod rod rod";
+  grid-template-columns: 20% auto auto;
   grid-template-rows: auto 1000px auto;
   gap: 30px;
   background-color: rgb(48, 183, 255);
-  }
-  
-  .cab{
+}
+
+.cab {
   background-color: rgb(224, 24, 24);
   grid-area: cab;
   height: 190px;
   position: relative;
   border-radius: 25px;
   border: 5px solid black;
-  }
-    
-  .pri{
+}
+
+.pri {
   background-color: rgb(186, 186, 186);
   grid-area: pri;
   height: auto;
   border-radius: 25px;
   border: 3px solid black;
-  }
-    
-  .rod{
+}
+
+.rod {
   background-color: rgb(224, 24, 24);
   grid-area: rod;
   height: 200px;
   border-radius: 25px;
   border: 5px solid black;
-  }
-    
-  #logo{
+}
+
+#logo {
   width: 125px;
   padding: 20px;
-  } 
-    
-  #logo2{
+}
+
+#logo2 {
   width: 150px;
   padding: 20px;
   float: right;
-  }
-    
-    
-  .icon{
+}
+
+
+.icon {
   width: 125px;
   padding: 25px;
   float: right;
-  }
-    
-  #carrinho{
+}
+
+#carrinho {
   width: 125px;
   padding: 25px;
-  }
-    
-  .container{
+}
+
+.container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  font-family: "Comic Sans MS", cursive, sans-serif; 
-  }
-    
-  .card{
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.card {
   width: 300px;
   background-color: rgb(224, 24, 24);
   border-radius: 8px;
@@ -79,155 +87,166 @@ body{
   align-items: center;
   text-align: center;
   border: 5px solid black;
-  }
-    
-  .card img{ 
+}
+
+.card img {
   width: 200px;
   border-radius: 15px;
   margin-bottom: 10px;
   border: 5px solid black;
   padding: 20px;
   background-color: rgb(48, 183, 255);
-  }
-    
-  .card h3{
+}
+
+.card h3 {
   font-size: 18px;
   margin-bottom: 10px;
-  }
-    
-  .card p{
+}
+
+.card p {
   color: black;
   background-color: chartreuse;
   border: 3px solid black;
   padding: 2px;
+}
+
+/*principal*/
+
+
+/*cadastro*/
+
+@media screen and (max-width: 700px) {
+  #bodycadastro {
+    background-color: chocolate;
   }
-  
-  /*principal*/
-  
-  
-  /*cadastro*/
-    
-  #bodycadastro{
+}
+
+
+
+#bodycadastro {
   background-color: rgb(48, 183, 255);
   height: 800px;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-  }
-  
-  #meio{
+}
+
+#meio {
   width: 400px;
   background-color: rgb(224, 24, 24);
   height: 600px;
   border: 7px solid black;
   border-radius: 25px;
-  display: flex; 
-  flex-direction: column; 
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  }
-  
-  label{
+}
+
+label {
   display: block;
   border: 4px solid black;
   font-weight: bold;
   height: 30px;
   border-radius: 15px;
-  font-family: "Comic Sans MS", cursive, sans-serif; 
+  font-family: "Comic Sans MS", cursive, sans-serif;
   padding: 5px;
   background-color: rgb(186, 186, 186);
-  }
-    
-  form{
-  width: 300px; 
+}
+
+form {
+  width: 300px;
   padding-top: 20px;
-  }
-    
-  input[type="text"], input[type="email"], input[type="number"] {
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
   width: 150px;
   border: 1px solid black;
   border-radius: 15px;
   margin: 15px;
   height: 20px;
-  }
-    
-  input[type="submit"]{
+}
+
+input[type="submit"] {
   background-color: chartreuse;
   color: black;
   height: 60px;
   border: 4px solid black;
   width: 300px;
   border-radius: 15px;
-  font-family: "Comic Sans MS", cursive, sans-serif; 
-  }
-    
-  .titulocadastro{
-  font-family: "Comic Sans MS", cursive, sans-serif; 
-  color: black;;
-  }
-  
-  #logoc{
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.titulocadastro {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  color: black;
+  ;
+}
+
+#logoc {
   width: 50px;
   margin-top: 20px;
-  }
-    
-  /*cadastro*/
-  
-  
-  /*produto*/
-  
-  #bodyproduto{
+}
+
+/*cadastro*/
+
+
+/*produto*/
+
+#bodyproduto {
   height: 900px;
   background-color: rgb(48, 183, 255);
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-  }
-  
-  .principalproduto {
+}
+
+.principalproduto {
   background-color: rgb(186, 186, 186);
   width: 450px;
-  height:auto;
+  height: auto;
   border-radius: 15px;
   border: 5px solid black;
   margin-top: 30px;
-    }
-  
-  .pp {
+}
+
+.pp {
   padding-top: 2px;
   margin: 30px;
-  }
-  
-  .charmanderimg{
+}
+
+.charmanderimg {
   width: 200px;
   border-radius: 15px;
   margin-bottom: 10px;
   border: 5px solid black;
   padding: 20px;
   background-color: rgb(48, 183, 255);
-  }
-      
-  .container2{
+}
+
+.container2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  font-family: "Comic Sans MS", cursive, sans-serif; 
-  }
-  
-  .h32{
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.h32 {
   font-size: 18px;
   margin-bottom: 10px;
-  }
-    
-  .p2{
-  color:black;
-  background-color:chartreuse;
+}
+
+.p2 {
+  color: black;
+  background-color: chartreuse;
   border: 3px solid black;
   padding: 2px;
-  }
-  
-  .card2{
+}
+
+.card2 {
   width: 300px;
   background-color: rgb(224, 24, 24);
   border-radius: 8px;
@@ -239,14 +258,14 @@ body{
   text-align: center;
   border: 5px solid black;
   margin-top: 20px;
-  }
-  
-  /*produto*/
-  
-  
-  /*carrinho*/
-  
-  #maincarrinho {
+}
+
+/*produto*/
+
+
+/*carrinho*/
+
+#maincarrinho {
   background-color: rgb(186, 186, 186);
   width: 900px;
   height: 700px;
@@ -256,21 +275,19 @@ body{
   justify-content: center;
   align-items: center;
   position: absolute;
-  }
-  
-  #bodycarrinho{
+}
+
+#bodycarrinho {
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
   height: 1000px;
-  }
-  
-  .ulcorrido {
+}
+
+.ulcorrido {
   display: flex;
   margin: 10px;
-  }
-  
-  /*carrinho*/
-  
-  
+}
+
+/*carrinho*/

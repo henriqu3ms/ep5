@@ -1,13 +1,5 @@
 /*principal*/
 
-@media screen and (max-width: 700px) {
-  .pri {
-    background-color: chocolate;
-  }
-}
-
-
-
 body {
   display: grid;
   grid-template-areas:
@@ -15,7 +7,7 @@ body {
     "pri pri pri"
     "rod rod rod";
   grid-template-columns: 20% auto auto;
-  grid-template-rows: auto 1000px auto;
+  grid-template-rows: auto auto auto;
   gap: 30px;
   background-color: rgb(48, 183, 255);
 }
@@ -114,14 +106,6 @@ body {
 
 
 /*cadastro*/
-
-@media screen and (max-width: 700px) {
-  #bodycadastro {
-    background-color: chocolate;
-  }
-}
-
-
 
 #bodycadastro {
   background-color: rgb(48, 183, 255);

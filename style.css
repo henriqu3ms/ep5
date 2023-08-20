@@ -108,7 +108,7 @@ body {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   /* Sombra */
   margin: 10px;
-  /* Margens */
+  /* Margen*/
   padding: 20px;
   /* Ajusta o espaçamento interno */
   display: flex;
@@ -289,7 +289,7 @@ input[type="submit"] {
   width: 450px;
   /*Define a largura*/
   height: auto;
-  /*Define a largura*/
+  /*Define a altura*/
   border-radius: 15px;
   /*Borda arredondada*/
   border: 5px solid black;
@@ -369,12 +369,14 @@ input[type="submit"] {
   border: 5px solid black;
   /*Altera a borda*/
   margin-top: 20px;
-  /* Define margem superior*/
+  /* Define margem a superior*/
 }
 
 .none {
   text-decoration: none;
+  /* Remove a decoração de texto*/
   color: black;
+  /* Define a cor do texto */
 }
 
 /*produto*/
@@ -382,81 +384,120 @@ input[type="submit"] {
 
 /*carrinho*/
 
-/* Estilos para o carrinho */
-#maincarrinho {
+#containercarrinho {
   background-color: rgb(186, 186, 186);
+  /*Altera a cor de fundo */
   width: 900px;
+  /*Define a largura*/
   height: 450px;
+  /*Define a altura*/
   border-radius: 15px;
+   /*Borda arredondada*/
   border: 5px solid black;
+  /*Altera a borda*/
   display: flex;
+  /* Exibe como flexbox */
   flex-direction: column;
   /* Alinha os elementos em coluna */
   justify-content: center;
+  /* Centraliza horizontalmente */
   align-items: center;
+  /* Centraliza verticalmente */
   margin-top: 100px;
+  /* Define margem a superior*/
+}
+
+#divcarrinho {
+  display: flex;
+  /* Exibe como flexbox */
+  justify-content: center;
+  /* Centraliza horizontalmente */
+  align-items: center;
+  /* Centraliza verticalmente */
+  position: relative;
+  height: 1000px;
+  /*Define a altura*/
+}
+
+.tablecarrinho {
+  width: 80%;
+  /*Define a largura*/
+  margin: auto;
+  /* Margen*/
+  background-color: white;
+  /*Altera a cor de fundo */
+  border-collapse: collapse;
+  /*Define o estilo de colapso de borda*/
+}
+
+.tablecarrinho td {
+  border: 3px solid black;
+  /*Altera a borda*/
+  padding: 10px;
+  /* Ajusta o espaçamento interno */
+  text-align: center;
+  /* Alinhamento de texto */
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  /* Altera a fonte */
+  font-size: 16px;
+  /* Define o tamanho da fonte*/
+  width: 300px;
+  /*Define a largura*/
+}
+
+.tablecarrinho th {
+  border: 3px solid black;
+  /*Altera a borda*/
+  padding: 10px;
+  /* Ajusta o espaçamento interno */
+  text-align: center;
+   /* Alinhamento de texto */
+  background-color: rgb(224, 24, 24);
+  /*Altera a cor de fundo */
+  color: white;
+  /*Define a cor do texto*/
+  font-weight: bold;
+  /* Deixa o texto em negrito */
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  /* Altera a fonte */
+  font-size: 16px;
+  /* Define o tamanho da fonte*/
+}
+
+#logocarrinho {
+  width: 65px;
+  /*Define a largura*/
+  margin-top: 30px;
+  /* Define a margem superior*/
+}
+
+.Finalizar {
+  background-color: chartreuse;
+  /*Altera a cor de fundo */
+  border: 3px solid black;
+  /*Altera a borda*/
+  margin-top: 20px;
+  /* Define margem a superior*/
+  width: 200px;
+  /*Define a largura*/
+  text-align: center;
+   /* Alinhamento de texto */
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  /* Altera a fonte */
+  font-size: 16px;
+  /* Altera o tamanho da fonte */
 }
 
 #bodycarrinho {
   display: flex;
+  /* Exibe como flexbox */
   justify-content: center;
+  /* Centraliza horizontalmente */
   align-items: center;
-  position: relative;
-  height: 1000px;
-}
-
-/* Estilos para a tabela do carrinho */
-.tablecarrinho {
-  width: 80%;
-  margin: auto;
-  background-color: white;
-  border-collapse: collapse;
-}
-
-/* Estilos para as células da tabela */
-.tablecarrinho td {
-  border: 3px solid black;
-  padding: 10px;
-  text-align: center;
-  font-family: "Comic Sans MS", cursive, sans-serif;
-  font-size: 16px;
-  width: 300px;
-}
-
-/* Estilos para as células de cabeçalho da tabela */
-.tablecarrinho th {
-  border: 3px solid black;
-  padding: 10px;
-  text-align: center;
-  background-color: rgb(224, 24, 24);
-  color: white;
-  font-weight: bold;
-  font-family: "Comic Sans MS", cursive, sans-serif;
-  font-size: 16px;
-}
-
-
-#logoca {
-  width: 65px;
-  margin-top: 30px;
-}
-
-.botao {
-  background-color: chartreuse;
-  border: 3px solid black;
-  margin-top: 20px;
-  width: 200px;
-  text-align: center;
-  font-family: "Comic Sans MS", cursive, sans-serif;
-  font-size: 16px;
-}
-
-#bodycarrinho2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  /* Centraliza verticalmente */
   position: relative;
   height: auto;
+   /*Define a altura*/
 }
 
 /*carrinho*/

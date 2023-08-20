@@ -93,7 +93,9 @@ body {
   display: flex;
   /* Exibe como flexbox */
   flex-wrap: wrap;
+  /* Quebra linha quando necessário */
   justify-content: center;
+  /* Centraliza horizontalmente */
   font-family: "Comic Sans MS", cursive, sans-serif;
   /*Altera a fonte*/
 }
@@ -155,6 +157,9 @@ body {
 /*principal*/
 
 
+
+
+
 /*cadastro*/
 
 #bodycadastro {
@@ -185,17 +190,18 @@ body {
   display: flex;
   /* Exibe como flexbox */
   flex-direction: column;
+  /* Direção de coluna */
   align-items: center;
   /* Centraliza verticalmente */
 }
 
 label {
   display: block;
-
+  /* Define o elemento como bloco */
   border: 4px solid black;
   /*Altera a borda*/
   font-weight: bold;
-
+  /* Define o peso da fonte como negrito */
   height: 30px;
   /* Define a altura */
   border-radius: 15px;
@@ -212,6 +218,7 @@ form {
   width: 300px;
   /*Define a largura*/
   padding-top: 20px;
+  /* Define o espaçamento superior interno */
 }
 
 input[type="text"],
@@ -224,6 +231,7 @@ input[type="number"] {
   border-radius: 15px;
   /*Borda arredondada*/
   margin: 15px;
+  /* Define as margens */
   height: 20px;
   /* Define a altura */
 }
@@ -250,9 +258,11 @@ input[type="submit"] {
 
 #logoc {
   width: 50px;
-  /*Define a largura*/
+  /* Define a largura */
   margin-top: 20px;
+  /* Define a margem superior */
 }
+
 
 /*cadastro*/
 
@@ -285,11 +295,14 @@ input[type="submit"] {
   border: 5px solid black;
   /*Altera a borda*/
   margin-top: 30px;
+  /* Define margem superior*/
 }
 
 .pp {
   padding-top: 2px;
+  /* Define o espaçamento superior interno */
   margin: 30px;
+  /* Define as margens */
 }
 
 .charmanderimg {
@@ -320,7 +333,9 @@ input[type="submit"] {
 
 .h32 {
   font-size: 18px;
+  /* Altera o tamanho da fonte */
   margin-bottom: 10px;
+  /*Margem inferior*/
 }
 
 .p2 {
@@ -340,17 +355,26 @@ input[type="submit"] {
   border-radius: 8px;
   /*Borda arredondada*/
   margin: 10px;
+  /* Define as margens */
   padding: 20px;
   /* Ajusta o espaçamento interno */
   display: flex;
   /* Exibe como flexbox */
   flex-direction: column;
+  /* Direção de coluna */
   align-items: center;
   /* Centraliza verticalmente */
   text-align: center;
+  /* Alinhamento de texto */
   border: 5px solid black;
   /*Altera a borda*/
   margin-top: 20px;
+  /* Define margem superior*/
+}
+
+.none {
+  text-decoration: none;
+  color: black;
 }
 
 /*produto*/
@@ -358,41 +382,81 @@ input[type="submit"] {
 
 /*carrinho*/
 
+/* Estilos para o carrinho */
 #maincarrinho {
   background-color: rgb(186, 186, 186);
-  /*Altera a cor de fundo*/
   width: 900px;
-  /*Define a largura*/
-  height: 700px;
-  /*Define a altura*/
+  height: 450px;
   border-radius: 15px;
-  /*Borda arredondada*/
   border: 5px solid black;
-  /*Altera a borda*/
   display: flex;
-  /* Exibe como flexbox */
+  flex-direction: column;
+  /* Alinha os elementos em coluna */
   justify-content: center;
-  /* Centraliza horizontalmente */
   align-items: center;
-  /* Centraliza verticalmente */
-  position: absolute;
+  margin-top: 100px;
 }
 
 #bodycarrinho {
   display: flex;
-  /* Exibe como flexbox */
   justify-content: center;
-  /* Centraliza horizontalmente */
   align-items: center;
   position: relative;
   height: 1000px;
-  /*Define a altura*/
 }
 
-.ulcorrido {
+/* Estilos para a tabela do carrinho */
+.tablecarrinho {
+  width: 80%;
+  margin: auto;
+  background-color: white;
+  border-collapse: collapse;
+}
+
+/* Estilos para as células da tabela */
+.tablecarrinho td {
+  border: 3px solid black;
+  padding: 10px;
+  text-align: center;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 16px;
+  width: 300px;
+}
+
+/* Estilos para as células de cabeçalho da tabela */
+.tablecarrinho th {
+  border: 3px solid black;
+  padding: 10px;
+  text-align: center;
+  background-color: rgb(224, 24, 24);
+  color: white;
+  font-weight: bold;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 16px;
+}
+
+
+#logoca {
+  width: 65px;
+  margin-top: 30px;
+}
+
+.botao {
+  background-color: chartreuse;
+  border: 3px solid black;
+  margin-top: 20px;
+  width: 200px;
+  text-align: center;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 16px;
+}
+
+#bodycarrinho2 {
   display: flex;
-  /* Exibe como flexbox */
-  margin: 10px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: auto;
 }
 
 /*carrinho*/

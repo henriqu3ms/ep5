@@ -3,103 +3,153 @@
 body {
   display: grid;
   grid-template-areas:
+    /*Define as areas*/
     "cab cab cab"
     "pri pri pri"
     "rod rod rod";
   grid-template-columns: 20% auto auto;
+  /*Define a quantidade de colunas*/
   grid-template-rows: auto auto auto;
+  /*Define a quantidade de linhas*/
   gap: 30px;
+  /* Espaçamento entre os elementos do grid */
   background-color: rgb(48, 183, 255);
+  /*Altera a cor de fundo*/
 }
 
 .cab {
   background-color: rgb(224, 24, 24);
+  /*Altera a cor de fundo */
   grid-area: cab;
+  /* Define a área do grid */
   height: 190px;
-  position: relative;
+  /*Define a altura */
   border-radius: 25px;
+  /*Borda arredondada*/
   border: 5px solid black;
+  /*Altera a borda*/
 }
 
 .pri {
   background-color: rgb(186, 186, 186);
+  /*Altera a cor de fundo */
   grid-area: pri;
+  /* Define a área do grid */
   height: auto;
+  /* Define a altura */
   border-radius: 25px;
+  /* Borda arredondada */
   border: 3px solid black;
+  /*Altera a borda*/
 }
 
 .rod {
   background-color: rgb(224, 24, 24);
+  /*Altera a cor de fundo */
   grid-area: rod;
+  /* Define a área do grid */
   height: 200px;
+  /* Define a altura */
   border-radius: 25px;
+  /*Borda arredondada*/
   border: 5px solid black;
+  /*Altera a borda*/
 }
 
 #logo {
   width: 125px;
+  /*Define a largura*/
   padding: 20px;
+  /* Ajusta o espaçamento interno */
 }
 
 #logo2 {
   width: 150px;
+  /*Define a largura*/
   padding: 20px;
+  /* Ajusta o espaçamento interno */
   float: right;
+  /* Alinha ao lado direito */
 }
 
 
 .icon {
   width: 125px;
+  /*Define a largura*/
   padding: 25px;
+  /* Ajusta o espaçamento interno */
   float: right;
+  /* Alinha ao lado direito */
 }
 
 #carrinho {
   width: 125px;
+  /*Define a largura*/
   padding: 25px;
+  /* Ajusta o espaçamento interno */
 }
 
 .container {
   display: flex;
+  /* Exibe como flexbox */
   flex-wrap: wrap;
   justify-content: center;
   font-family: "Comic Sans MS", cursive, sans-serif;
+  /*Altera a fonte*/
 }
 
 .card {
-  width: 300px;
   background-color: rgb(224, 24, 24);
+  /* Altera a cor de fundo */
   border-radius: 8px;
+  /*Borda arredondada*/
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* Sombra */
   margin: 10px;
+  /* Margens */
   padding: 20px;
+  /* Ajusta o espaçamento interno */
   display: flex;
+  /* Exibe como flexbox */
   flex-direction: column;
+  /* Direção de coluna */
   align-items: center;
+  /* Centraliza verticalmente */
   text-align: center;
+  /* Alinhamento de texto */
   border: 5px solid black;
+  /*Altera a borda*/
 }
 
 .card img {
   width: 200px;
+  /*Define a largura*/
   border-radius: 15px;
+  /*Borda arredondada*/
   margin-bottom: 10px;
+  /* Margem inferior */
   border: 5px solid black;
+  /*Altera a borda*/
   padding: 20px;
+  /* Ajusta o espaçamento interno */
   background-color: rgb(48, 183, 255);
+  /*Altera a cor de fundo */
 }
 
 .card h3 {
   font-size: 18px;
+  /* Altera o tamanho da fonte */
   margin-bottom: 10px;
+  /* Margem inferior */
 }
 
 .card p {
-  color: black;
   background-color: chartreuse;
+  /*Altera a cor de fundo */
   border: 3px solid black;
+  /*Altera a borda*/
   padding: 2px;
+  /* Ajusta o espaçamento interno */
 }
 
 /*principal*/
@@ -109,37 +159,58 @@ body {
 
 #bodycadastro {
   background-color: rgb(48, 183, 255);
+  /*Altera a cor de fundo */
   height: 800px;
+  /* Define a altura */
   display: flex;
+  /* Exibe como flexbox */
   justify-content: center;
+  /* Centraliza horizontalmente */
   align-items: center;
+  /* Centraliza verticalmente */
   position: relative;
 }
 
 #meio {
   width: 400px;
+  /*Define a largura*/
   background-color: rgb(224, 24, 24);
+  /*Altera a cor de fundo */
   height: 600px;
+  /* Define a altura */
   border: 7px solid black;
+  /*Altera a borda*/
   border-radius: 25px;
+  /*Borda arredondada*/
   display: flex;
+  /* Exibe como flexbox */
   flex-direction: column;
   align-items: center;
+  /* Centraliza verticalmente */
 }
 
 label {
   display: block;
+
   border: 4px solid black;
+  /*Altera a borda*/
   font-weight: bold;
+
   height: 30px;
+  /* Define a altura */
   border-radius: 15px;
+  /*Borda arredondada*/
   font-family: "Comic Sans MS", cursive, sans-serif;
+  /* Altera a fonte */
   padding: 5px;
+  /* Ajusta o espaçamento interno */
   background-color: rgb(186, 186, 186);
+  /*Altera a cor de fundo */
 }
 
 form {
   width: 300px;
+  /*Define a largura*/
   padding-top: 20px;
 }
 
@@ -147,30 +218,39 @@ input[type="text"],
 input[type="email"],
 input[type="number"] {
   width: 150px;
+  /*Define a largura*/
   border: 1px solid black;
+  /*Altera a borda*/
   border-radius: 15px;
+  /*Borda arredondada*/
   margin: 15px;
   height: 20px;
+  /* Define a altura */
 }
 
 input[type="submit"] {
   background-color: chartreuse;
-  color: black;
+  /*Altera a cor de fundo */
   height: 60px;
+  /*Define a largura*/
   border: 4px solid black;
+  /*Altera a borda*/
   width: 300px;
+  /*Define a largura*/
   border-radius: 15px;
+  /*Borda arredondada*/
   font-family: "Comic Sans MS", cursive, sans-serif;
+  /* Altera a fonte */
 }
 
 .titulocadastro {
   font-family: "Comic Sans MS", cursive, sans-serif;
-  color: black;
-  ;
+  /* Altera a fonte */
 }
 
 #logoc {
   width: 50px;
+  /*Define a largura*/
   margin-top: 20px;
 }
 
@@ -181,19 +261,29 @@ input[type="submit"] {
 
 #bodyproduto {
   height: 900px;
+  /* Define a altura */
   background-color: rgb(48, 183, 255);
+  /*Altera a cor de fundo */
   display: flex;
+  /* Exibe como flexbox */
   justify-content: center;
+  /* Centraliza horizontalmente */
   align-items: center;
+  /* Centraliza verticalmente */
   position: relative;
 }
 
 .principalproduto {
   background-color: rgb(186, 186, 186);
+  /*Altera a cor de fundo */
   width: 450px;
+  /*Define a largura*/
   height: auto;
+  /*Define a largura*/
   border-radius: 15px;
+  /*Borda arredondada*/
   border: 5px solid black;
+  /*Altera a borda*/
   margin-top: 30px;
 }
 
@@ -204,18 +294,28 @@ input[type="submit"] {
 
 .charmanderimg {
   width: 200px;
+  /*Define a largura*/
   border-radius: 15px;
+  /*Borda arredondada*/
   margin-bottom: 10px;
+  /*Margem inferior*/
   border: 5px solid black;
+  /*Altera a borda*/
   padding: 20px;
+  /*Ajusta o espaçamento interno*/
   background-color: rgb(48, 183, 255);
+  /*Altera a cor de fundo*/
 }
 
 .container2 {
   display: flex;
+  /* Exibe como flexbox */
   flex-wrap: wrap;
+  /* Quebra linha quando necessário */
   justify-content: center;
+  /* Centraliza horizontalmente */
   font-family: "Comic Sans MS", cursive, sans-serif;
+  /* Altera a fonte */
 }
 
 .h32 {
@@ -224,23 +324,32 @@ input[type="submit"] {
 }
 
 .p2 {
-  color: black;
   background-color: chartreuse;
+  /*Altera a cor de fundo */
   border: 3px solid black;
+  /*Altera a borda*/
   padding: 2px;
+  /* Ajusta o espaçamento interno */
 }
 
 .card2 {
   width: 300px;
+  /*Define a largura*/
   background-color: rgb(224, 24, 24);
+  /*Altera a cor de fundo */
   border-radius: 8px;
+  /*Borda arredondada*/
   margin: 10px;
   padding: 20px;
+  /* Ajusta o espaçamento interno */
   display: flex;
+  /* Exibe como flexbox */
   flex-direction: column;
   align-items: center;
+  /* Centraliza verticalmente */
   text-align: center;
   border: 5px solid black;
+  /*Altera a borda*/
   margin-top: 20px;
 }
 
@@ -251,26 +360,38 @@ input[type="submit"] {
 
 #maincarrinho {
   background-color: rgb(186, 186, 186);
+  /*Altera a cor de fundo*/
   width: 900px;
+  /*Define a largura*/
   height: 700px;
+  /*Define a altura*/
   border-radius: 15px;
+  /*Borda arredondada*/
   border: 5px solid black;
+  /*Altera a borda*/
   display: flex;
+  /* Exibe como flexbox */
   justify-content: center;
+  /* Centraliza horizontalmente */
   align-items: center;
+  /* Centraliza verticalmente */
   position: absolute;
 }
 
 #bodycarrinho {
   display: flex;
+  /* Exibe como flexbox */
   justify-content: center;
+  /* Centraliza horizontalmente */
   align-items: center;
   position: relative;
   height: 1000px;
+  /*Define a altura*/
 }
 
 .ulcorrido {
   display: flex;
+  /* Exibe como flexbox */
   margin: 10px;
 }
 
